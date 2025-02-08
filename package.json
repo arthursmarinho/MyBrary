@@ -4,7 +4,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "devstart": "nodemon server.js"
+    "devstart": "nodemon server.js",
+    "build": "npm run generate-html && vite build",
+    "generate-html": "mkdir -p dist && cp index.html dist/"
   },
   "keywords": [],
   "author": "",
